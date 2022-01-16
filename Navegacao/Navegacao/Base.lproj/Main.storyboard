@@ -1,24 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Navegacao" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbu-jg-5eh">
+                                <rect key="frame" x="275" y="95" width="104" height="31"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Proxima tela"/>
+                                <connections>
+                                    <segue destination="p6I-eE-Geg" kind="show" id="ph3-yj-9Hg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pbu-jg-5eh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="95" id="183-oD-xS6"/>
+                            <constraint firstItem="pbu-jg-5eh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="275" id="nhe-Ho-Dxf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pbu-jg-5eh" secondAttribute="trailing" constant="35" id="ypn-dG-MZK"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="xT0-0k-Jbm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53.623188405797109" y="94.419642857142847"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="762-wj-Z7x">
+            <objects>
+                <viewController id="p6I-eE-Geg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iyN-DL-apn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4z-iL-pdl">
+                                <rect key="frame" x="275" y="95" width="104" height="31"/>
+                                <color key="backgroundColor" red="0.0" green="0.36862745099999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Proxima tela"/>
+                                <connections>
+                                    <segue destination="Fxj-7n-Plt" kind="show" id="YYg-7F-chV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="b7h-lE-891">
+                                <rect key="frame" x="32" y="95" width="104" height="31"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Retorna Tela"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="A8d-5B-Rtm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mfR-kc-2Z7"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="b7h-lE-891" firstAttribute="leading" secondItem="mfR-kc-2Z7" secondAttribute="leading" constant="32" id="F95-dW-P0J"/>
+                            <constraint firstItem="mfR-kc-2Z7" firstAttribute="trailing" secondItem="k4z-iL-pdl" secondAttribute="trailing" constant="35" id="N1t-Pi-r4C"/>
+                            <constraint firstItem="k4z-iL-pdl" firstAttribute="top" secondItem="mfR-kc-2Z7" secondAttribute="top" constant="95" id="RDq-uW-dcN"/>
+                            <constraint firstItem="b7h-lE-891" firstAttribute="top" secondItem="mfR-kc-2Z7" secondAttribute="top" constant="95" id="kRR-pY-TTe"/>
+                            <constraint firstItem="k4z-iL-pdl" firstAttribute="leading" secondItem="b7h-lE-891" secondAttribute="trailing" constant="139" id="vIn-0X-kb1"/>
+                            <constraint firstItem="k4z-iL-pdl" firstAttribute="leading" secondItem="mfR-kc-2Z7" secondAttribute="leading" constant="275" id="yeO-gZ-pfw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="p6h-qU-dk1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nMM-yq-JM8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709" y="94"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eiD-LG-8j0">
+            <objects>
+                <viewController id="Fxj-7n-Plt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5uL-Zg-KQi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ibZ-nw-zwG">
+                                <rect key="frame" x="32" y="95" width="104" height="31"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Retorna Tela"/>
+                                <connections>
+                                    <segue destination="p6I-eE-Geg" kind="show" id="jrW-49-8Gk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jam-GQ-dsb"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="jam-GQ-dsb" firstAttribute="trailing" secondItem="ibZ-nw-zwG" secondAttribute="trailing" constant="278" id="4So-gY-a6E"/>
+                            <constraint firstItem="ibZ-nw-zwG" firstAttribute="top" secondItem="jam-GQ-dsb" secondAttribute="top" constant="95" id="LkO-qu-Uhd"/>
+                            <constraint firstItem="ibZ-nw-zwG" firstAttribute="leading" secondItem="jam-GQ-dsb" secondAttribute="leading" constant="32" id="n3E-gG-UGE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uH2-fC-CNO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qew-0J-qeP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1355" y="94"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jrW-49-8Gk"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
