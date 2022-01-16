@@ -14,6 +14,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func showSecondView(_ sender: Any) {
+        performSegue(withIdentifier: "segue", sender: nil)
+    }
+    
+    @IBAction func unwindView1(segue: UIStoryboardSegue) {
+        
+    }
+    
 }
 

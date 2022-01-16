@@ -13,6 +13,7 @@
 		00D2A3EF27947207009CC7B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D2A3ED27947207009CC7B2 /* Main.storyboard */; };
 		00D2A3F127947208009CC7B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D2A3F027947208009CC7B2 /* Assets.xcassets */; };
 		00D2A3F427947208009CC7B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D2A3F227947208009CC7B2 /* LaunchScreen.storyboard */; };
+		00D2A3FC27949312009CC7B2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D2A3FB27949311009CC7B2 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		00D2A3F027947208009CC7B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00D2A3F327947208009CC7B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00D2A3F527947208009CC7B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00D2A3FB27949311009CC7B2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		00D2A3DB27947207009CC7B2 = {
 			isa = PBXGroup;
 			children = (
+				00D2A3FB27949311009CC7B2 /* SecondViewController.swift */,
 				00D2A3E627947207009CC7B2 /* Navegacao */,
 				00D2A3E527947207009CC7B2 /* Products */,
 			);
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00D2A3FC27949312009CC7B2 /* SecondViewController.swift in Sources */,
 				00D2A3EC27947207009CC7B2 /* ViewController.swift in Sources */,
 				00D2A3E827947207009CC7B2 /* AppDelegate.swift in Sources */,
 				00D2A3EA27947207009CC7B2 /* SceneDelegate.swift in Sources */,
